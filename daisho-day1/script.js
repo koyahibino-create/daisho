@@ -1,7 +1,7 @@
 const helloBtn=document.getElementByld("helloBtn");
 const message=document.getElementByld("message");
 
-helloBtn.addEventListerner("click",()=>{
+helloBtn.addEventListerner("click",()=> {
     const hour=new Date().getHours();
     let greeting="こんにちは！";
 
@@ -11,5 +11,5 @@ helloBtn.addEventListerner("click",()=>{
         greeting="こんばんは！";
     }
 
-    message.textcontent='${greeting} GitHub Pages の公開に成功しました！;
+    message.textcontent='${greeting} GitHub Pages の公開に成功しました！';
 });
