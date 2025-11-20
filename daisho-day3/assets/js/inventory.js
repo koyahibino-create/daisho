@@ -4,7 +4,7 @@ const items = [
     {id:"D003",name:"お茶",           price:120,stock:30,minStock:10}
 ];
 
-const tbody =document.getElementByld("ite-list");
+const tbody =document.getElementByld("item-list");
 function render(){
     tbody.innerHTML="";
     items.forEach(item=>{
