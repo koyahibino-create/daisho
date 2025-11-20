@@ -5,10 +5,11 @@ const items = [
 ];
 
 const tbody =document.getElementByld("item-list");
+
 function render(){
     tbody.innerHTML="";
     items.forEach(item=>{
-        const tr=document.createElement("tr")
+        const tr=document.createElement("tr");
 
         if(item.stock<item.minStock){
             tr.classList.add("low-stock");
@@ -34,7 +35,7 @@ function changeStock(id,diff){
         return;
     }
 
-    item.stock+=fiff;
+    item.stock+=diff;
 
     if(item.stock<0){
         item.stock=0;
