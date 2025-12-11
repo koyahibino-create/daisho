@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Day3　在庫管理アプリ（保存＋メール送信）</title>
+    <link rel="stylesheet"href="assets/css/inventory.css">
+</head>
+<body>
+    <h1>文化祭ドリンク在庫管理（Day4）</h1>
+    <p class="muted">
+        JSONで管理している在庫データをブラウザに保存し、StaticForms　を使って在庫一覧をメール送信するアプリです
+    </p>
+
+    <section class="panel">
+        <h2 class="panel-title">在庫一覧</h2>
+        <table class="inventory-table">
+            <thead>
+                <tr>
+                    <th>商品ID</th>
+                    <th>商品名</th>
+                    <th>価格（税込）</th>
+                    <th>在庫数</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+        <tbody id="item-list">
+        </tbody>
+        </table>
+        <p class="hint">
+            在庫数が<code>minStock</code>
+        </p>
+    </section>
+
+    <form
+    id="inventory-mail-form"
+    action="https://api.staticforms.dev/submit"
+    method="POST"
+    style="display:none;"
+    >
+
+    <input type="hidden" name=""/>
+    <inputtype="hidden"
+    name="redirectTo"
+    value="https://example.github.io/daisho/daisho-day4/">
+    
+    <script src="assets/js/inventory.js"></script>
+</body>
+</html>
